@@ -1,0 +1,19 @@
+p {
+    background: pink;
+    font-family: verdana, DejaVu Sans, sans-serif ;
+}
+
+.second-element {
+    color: blue;
+    font-size: 36px;
+}
+
+.third-element {
+    font-size:  24px;
+}
+
+.forth {
+    background: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}

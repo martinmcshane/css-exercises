@@ -1,0 +1,64 @@
+* {
+    background-color: lightgray;
+}
+/* universal selector*/
+div {color: blue;}
+
+/* class selector*/
+.class-title {color: green;}
+
+/* id selector*/
+#id-title {color: salmon;}
+
+/* grouping selectors with shared elements */
+.read, .unread {
+    background-color: purple;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(183, 29, 214);
+    max-width: 25%;
+}
+
+/* specifying individual elements from shared selectors above */
+.read {color:white}
+.unread {color: black; font-weight: bolder;}
+/*-----*/
+
+/* chaining selectors - similar to grouping, totally fucking pointless IMO */
+.subsection {background-color: white; font-size: 30px;}
+.header {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.subsection.header{color: brown;}
+.subsection.preview{color: rgb(156, 154, 34);}
+/*-----*/
+
+/* Descendant Combinator - only applies styling to the child selector of the ancestor */
+.ancestor .content {background-color: black;}
+.content {background-color: green;}
+/*----*/
+
+/*Specificity - confusing as fuck*/
+/*rule 1*/
+.main {
+    color: yellow;
+    background-color: black;
+  }
+  
+  /* rule 2 */
+ .list  {
+    color: red;
+  }
+/*------*/
+/* Inheritance */
+.parent.child {color: red; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.parent {
+    color: salmon;
+  }
+
+.child {
+    color:#000;
+    font-weight: 900;
+
+}
+  
+ 
